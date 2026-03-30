@@ -16,7 +16,7 @@ def generate_password():
     nr_symbols = random.randint(2, 4)
     nr_numbers = random.randint(2, 4)
 
-    # Your list comprehensions — perfect!
+   
     password_letters = [random.choice(letters) for _ in range(nr_letters)]
     password_symbols = [random.choice(symbols) for _ in range(nr_symbols)]
     password_numbers = [random.choice(numbers) for _ in range(nr_numbers)]
