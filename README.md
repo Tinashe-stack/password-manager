@@ -1,5 +1,7 @@
 # Password Manager
 
+![Password Manager Logo](logo.png)
+
 Secure Tkinter app to generate strong passwords and save credentials to file.
 
 ## Features
