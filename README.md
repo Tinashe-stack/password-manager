@@ -1,30 +1,81 @@
 # Password Manager
 
-![Password Manager Logo](logo.png)
+A Python desktop application built with Tkinter for generating strong passwords, storing credentials locally, and searching saved login details.
 
-Secure Tkinter app to generate strong passwords and save credentials to file.
+## Overview
+
+This project was built to practise Python GUI development, file handling, JSON data storage, and user-focused application design. The app allows a user to generate secure passwords, copy them to the clipboard automatically, and save website credentials for later lookup.
 
 ## Features
-- Generates 12-18 char passwords (letters + numbers + symbols)
-- Auto-copies to clipboard
-- Saves website/email/password to `passwords.txt`
-- Clean, responsive UI
 
-## Demo
-![Password Manager](screenshot.png) <!-- Add screenshot here -->
+- Generate random passwords using letters, numbers, and symbols.
+- Automatically copy generated passwords to the clipboard.
+- Save website, email/username, and password details to a local `data.json` file.
+- Search saved credentials by website name.
+- Simple Tkinter interface for quick desktop use.
 
-## Usage
-1. Enter website & email
-2. Click "Generate Password"
-3. Click "Add" to save
+## Tech Stack
 
-## Requirements
 - Python 3
-- `pip install pyperclip`
+- Tkinter
+- `pyperclip`
+- `json`
+- `random`
 
-## Files
-- `password_manager.py` — Main app
-- `logo.png` — App icon (200x200)
-- `passwords.txt` — Stored credentials
+## Project Structure
 
-Built with ❤️ for 100 Days of Code.
+- `main.py` — main application logic and Tkinter UI.
+- `logo.png` — application logo displayed in the interface.
+- `data.json` — local file used to store saved credentials.
+
+## Installation
+
+1. Clone the repository.
+2. Install the required dependency:
+
+```bash
+pip install pyperclip
+```
+
+3. Run the application:
+
+```bash
+python main.py
+```
+
+## How to Use
+
+1. Enter a website name.
+2. Enter an email address or username.
+3. Click **Generate Password** to create a password.
+4. Click **Add** to save the credentials.
+5. Use **Search** to look up saved credentials for a website.
+
+## What I Learned
+
+This project helped me improve my understanding of:
+
+- Python GUI development with Tkinter.
+- Working with structured data using JSON.
+- Input validation and user feedback with message boxes.
+- Building small desktop tools with practical functionality.
+
+## Limitations
+
+This project stores credentials locally in a JSON file and is intended as a learning project rather than a production-ready password manager. A stronger future version could include encryption, update/delete functionality, and automated tests.
+
+## Future Improvements
+
+- Encrypt stored credentials.
+- Add update and delete entry features.
+- Improve error handling for corrupted or missing data files.
+- Refactor the code into smaller functions or modules.
+- Add unit tests for password generation and file operations.
+
+## Screenshot
+
+_Add a screenshot of the application here to improve the presentation of the repository._
+
+---
+
+Built as part of my Python learning journey and portfolio development.
