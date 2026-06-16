@@ -74,7 +74,7 @@ This project stores credentials locally in a JSON file and is intended as a lear
 
 ## Screenshot
 
-_Add a screenshot of the application here to improve the presentation of the repository._
+![Password Manager](screenshot.png)
 
 ---
 
